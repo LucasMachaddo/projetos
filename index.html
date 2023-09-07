@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+        body {
+            padding: 0%;
+            background: hsl(217, 54%, 11%);
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .box {
+            background-color: hsl(216, 50%, 16%);
+            margin: auto;
+            margin-top: 10%;
+            width: 335px;
+            padding: 4px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px hsl(217, 58%, 13%);
+        }
+
+        .imagem {
+            background-image: url(image-equilibrium.jpg);
+            height: 298px;
+            width: 300px;
+            margin-left: 18px;
+            background-size: 100% auto;
+            border-radius: 10px;
+            margin-top: 17px;
+        }
+
+        .view {
+            padding: 41%;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transition: opacity .2s linear;
+            background-color: rgba(0, 238, 255, 0.466);
+            background-size: 100% auto;
+            border-radius: 10px;
+        }
+
+        .imagem:hover .view {
+            opacity: 1;
+        }
+
+        #conteudo {
+            margin-top: -15px;
+            padding: 20px;
+            color: rgb(216, 216, 216);
+        }
+
+        #valor {
+            border-bottom: 0.6px solid rgb(180, 180, 180);
+        }
+
+        figure {
+            padding: 5px;
+            margin: 0;
+        }
+
+        figcaption {
+            float: right;
+            margin-top: 15px;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: aqua
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <a href="">
+            <div class="imagem">
+                <div class="view"><img
+                        src="file:///C:/Users/Lucas/OneDrive/%C3%81rea%20de%20Trabalho/CURSO%20WEB%20-%20Copia/HTML/CARD%20NFT%20PROJETO%201/icon-view.svg">
+                </div>
+            </div>
+        </a>
+
+        <div id="conteudo">
+            <h3><a href="" title="grafico ETH">Equilibrium #3429</a></h3>
+
+            <p>Our Equilibrium collections prometes balance and calm.</p>
+
+            <div id="valor">
+                <img style="vertical-align: top;"
+                    src="file:///C:/Users/Lucas/OneDrive/%C3%81rea%20de%20Trabalho/CURSO%20WEB%20-%20Copia/HTML/CARD%20NFT%20PROJETO%201/icon-ethereum.svg">
+                <strong style="color:aqua">0.041 ETH</strong> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+                <img style="vertical-align: text-top;"
+                    src="file:///C:/Users/Lucas/OneDrive/%C3%81rea%20de%20Trabalho/CURSO%20WEB%20-%20Copia/HTML/CARD%20NFT%20PROJETO%201/icon-clock.svg">
+                <strong style="text-align: right;">3 Days left</strong>
+                <br><br>
+            </div>
+
+            <div id="credito">
+                <br>
+                <figure>
+                    <img src="eu.png" width="50" height="50" style="border-radius: 50px">
+                    <figcaption>Creation of <a href="">Lucas Machado</a></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
